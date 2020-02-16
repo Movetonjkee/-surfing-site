@@ -4962,15 +4962,39 @@ input[type=number] {
   .slider-map {
     background-image: none;
     max-width: 100%;
+    min-height: 280px;
+  }
+  .slider-dots {
+    position: static;
   }
   .slider-dots__circle {
     display: none;
   }
   .slider-dots__content {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
     display: block;
+    width: 285px;
+    padding: 28px 31px 0px 32px;
   }
   .slider-dots__content::before {
     display: none;
+  }
+  .slider-map .slick-current .slider-dots__content {
+    background: rgba(204, 204, 204, 0.7);
+  }
+  .slider-dots--8 .slider-dots__content {
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+  }
+  .slider-map .slick-list {
+    overflow: hidden;
+    min-height: 280px;
+  }
+  .slick-track {
+    min-height: 280px;
   }
 }
 

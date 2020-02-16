@@ -10,7 +10,14 @@ $(function () {
   $('.slider-dotshead').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: '.header__slider'
+    asNavFor: '.header__slider',
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick"
+      }
+    ]
+    
   });
   $('.surf-slider').slick({
     slidesToShow: 4,
@@ -22,7 +29,7 @@ $(function () {
       {
         breakpoint: 1210,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 3,
         }
       }
     ]
@@ -32,7 +39,15 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.surf-slider',
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+        }
+      }
+    ]
 
   });
   $('.holder__slider, .shop__slider').slick({
