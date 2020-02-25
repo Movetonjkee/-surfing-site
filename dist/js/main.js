@@ -27,9 +27,29 @@ $(function () {
     asNavFor: '.slider-map',
     responsive: [
       {
-        breakpoint: 1210,
+        breakpoint: 1103,
         settings: {
           slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
         }
       }
     ]
@@ -45,6 +65,27 @@ $(function () {
         breakpoint: 1103,
         settings: {
           slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
         }
       }
     ]
