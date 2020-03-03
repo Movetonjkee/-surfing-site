@@ -3650,7 +3650,7 @@ template {
 
 .header__slider-item {
   height: 100vh;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3846,7 +3846,7 @@ template {
   position: absolute;
   width: 11px;
   height: 13px;
-  background-image: url("../img/marker.svg");
+  background-image: url("../../img/marker.svg");
   left: 0;
   top: 0;
 }
@@ -3885,7 +3885,7 @@ template {
 }
 
 .surf {
-  background-image: url("../img/surg-bg.png");
+  background-image: url("../../img/surg-bg.png");
   background-position: right 190px;
   background-repeat: no-repeat;
   background-size: auto;
@@ -3992,7 +3992,7 @@ template {
 .slider-map {
   max-width: 1200px;
   min-height: 635px;
-  background-image: url("../img/world-map-dots.png");
+  background-image: url("../../img/world-map-dots.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4137,7 +4137,7 @@ template {
 .slider-dots--2 .slider-dots__circle::before {
   content: '';
   position: absolute;
-  background-image: url("../img/marker.png");
+  background-image: url("../../img/marker.png");
   background-repeat: no-repeat;
   width: 14px;
   height: 17px;
@@ -4188,13 +4188,13 @@ template {
 }
 
 .holder {
-  background-image: url("../img/travel-bg.png");
+  background-image: url("../../img/travel-bg.png");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .holder.sleep {
-  background-image: url("../img/Frangipani.png");
+  background-image: url("../../img/Frangipani.png");
 }
 
 .holder .slider-arrows {
@@ -4314,7 +4314,7 @@ template {
 }
 
 .shop {
-  background-image: url(../img/shop-bg.png);
+  background-image: url(../../img/shop-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -4968,6 +4968,16 @@ input[type=number] {
   }
 }
 
+@media (max-width: 1150px) {
+  .holder-slider__descr {
+    padding: 100px 0 0 20px;
+  }
+  .surf,
+  .holder {
+    padding: 70px 0 50px;
+  }
+}
+
 @media (max-width: 1102px) {
   .slider-map {
     background-image: none;
@@ -5005,6 +5015,32 @@ input[type=number] {
   }
   .slick-track {
     min-height: 280px;
+  }
+  .holder-slider__info {
+    display: block;
+  }
+  .holder-slider__info-subtitle {
+    position: static;
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
+    height: auto;
+    width: auto;
+    text-align: left;
+  }
+  .holder-slider__info-item {
+    min-height: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .holder-slider__info-title {
+    padding-left: 0;
+  }
+  .holder-slider__descr {
+    background-position: right -119px;
+  }
+  .holder .title span {
+    padding-bottom: 0;
   }
 }
 
@@ -5104,9 +5140,6 @@ input[type=number] {
   .title span {
     font-size: 100px;
     padding-bottom: 80px;
-  }
-  .surf, .holder {
-    padding: 70px 0 50px;
   }
 }
 
