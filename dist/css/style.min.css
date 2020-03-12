@@ -3650,7 +3650,7 @@ template {
 
 .header__slider-item {
   height: 100vh;
-  background-image: url("../../img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3846,7 +3846,7 @@ template {
   position: absolute;
   width: 11px;
   height: 13px;
-  background-image: url("../../img/marker.svg");
+  background-image: url("../img/marker.svg");
   left: 0;
   top: 0;
 }
@@ -3885,7 +3885,7 @@ template {
 }
 
 .surf {
-  background-image: url("../../img/surg-bg.png");
+  background-image: url("../img/surg-bg.png");
   background-position: right 190px;
   background-repeat: no-repeat;
   background-size: auto;
@@ -3992,7 +3992,7 @@ template {
 .slider-map {
   max-width: 1200px;
   min-height: 635px;
-  background-image: url("../../img/world-map-dots.png");
+  background-image: url("../img/world-map-dots.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -4090,6 +4090,7 @@ template {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 1;
 }
 
 .slider-dots__content::before {
@@ -4137,7 +4138,7 @@ template {
 .slider-dots--2 .slider-dots__circle::before {
   content: '';
   position: absolute;
-  background-image: url("../../img/marker.png");
+  background-image: url("../img/marker.png");
   background-repeat: no-repeat;
   width: 14px;
   height: 17px;
@@ -4152,7 +4153,7 @@ template {
 }
 
 .slider-dots--4 {
-  top: 4700px;
+  top: 470px;
   left: -25px;
 }
 
@@ -4188,13 +4189,13 @@ template {
 }
 
 .holder {
-  background-image: url("../../img/travel-bg.png");
+  background-image: url("../img/travel-bg.png");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
 .holder.sleep {
-  background-image: url("../../img/Frangipani.png");
+  background-image: url("../img/Frangipani.png");
 }
 
 .holder .slider-arrows {
@@ -4314,7 +4315,7 @@ template {
 }
 
 .shop {
-  background-image: url(../../img/shop-bg.png);
+  background-image: url(../img/shop-bg.png);
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -4574,6 +4575,8 @@ body {
   background-color: #171919;
   color: #fff;
   text-transform: uppercase;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 a {
@@ -4631,7 +4634,7 @@ li {
   top: 50%;
 }
 
-.title span {
+.title div {
   font-weight: 800;
   font-size: 200px;
   color: rgba(255, 255, 255, 0.02);
@@ -4640,6 +4643,10 @@ li {
   -webkit-transform: translateX(-50px);
       -ms-transform: translateX(-50px);
           transform: translateX(-50px);
+}
+
+.title span {
+  display: inline-block;
 }
 
 .title h3 {

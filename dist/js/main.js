@@ -103,7 +103,7 @@ $(function () {
 
 
 
-  $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="../img/Plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="../img/Minus.svg" alt=""></div></div>').insertAfter('.quantity input');
+  $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/Plus.svg" alt=""></div><div class="quantity-button quantity-down"><img src="img/Minus.svg" alt=""></div></div>').insertAfter('.quantity input');
   $('.quantity').each(function () {
     var spinner = $(this),
       input = spinner.find('input[type="number"]'),
@@ -153,5 +153,14 @@ $(function () {
 
   $('.menu-btn').on('click', function () {
     $('.menu').toggleClass('active')
-  })
+  });
+
+  new WOW().init();
+
+$("body").on('click', '[href*="#"]', function (e) {
+  var fixed_offset = 100;
+  $('html,body').stop().animate({
+    scrollTop: $(this.hash).offset().top}, 1000);
+  e.preventDefault();
+});
 });
